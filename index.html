@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact-app">
+        <header class="app-header">
+          <h1><i class="fas fa-address-book"></i> Contact Book</h1>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search contacts..." class="search-input">
+            <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+        </header>
+
+        <div class="contact-form">
+          <h2>Add New Contact</h2>
+          <div class="input-group">
+            <input id="CName" type="text" required placeholder="Contact Name" class="form-input" />
+            <input id="CNumber" type="tel" required placeholder="Contact Number" class="form-input" />
+            <button id="SaveBtn" class="primary-btn"><i class="fas fa-save"></i> Save Contact</button>
+          </div>
+        </div>
+
+        <div class="contacts-list">
+          <h2>Your Contacts</h2>
+          <ul id="ul" class="contacts-container">
+            <!-- Contacts will be added here dynamically -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
